@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paddlesport &amp; Raft Building Permits in Scouts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/presentation.css" />
+  </head>
+  <body>
+    <div class="presentation" aria-live="polite">
+      <header class="presentation-header">
+        <img
+          class="scouts-logo"
+          src="assets/images/scouts-logo-purple.svg"
+          alt="Scouts"
+          width="200"
+          height="48"
+        />
+        <div class="presentation-header__controls">
+          <button
+            type="button"
+            class="header-btn"
+            id="btn-fullscreen"
+            aria-label="Enter full screen"
+          >
+            <i class="fa-solid fa-expand" id="fullscreen-icon" aria-hidden="true"></i>
+          </button>
+          <div
+            class="slide-timer"
+            id="slide-timer"
+            role="timer"
+            aria-label="Time remaining on this slide"
+          >
+            <svg class="slide-timer__svg" viewBox="0 0 44 44" aria-hidden="true">
+              <circle class="slide-timer__track" cx="22" cy="22" r="18" />
+              <circle class="slide-timer__progress" cx="22" cy="22" r="18" pathLength="100" />
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <div class="slides">
+        <div class="mesh-gradient" aria-hidden="true">
+          <span class="mesh-gradient__blob mesh-gradient__blob--1"></span>
+          <span class="mesh-gradient__blob mesh-gradient__blob--2"></span>
+          <span class="mesh-gradient__blob mesh-gradient__blob--3"></span>
+          <span class="mesh-gradient__blob mesh-gradient__blob--4"></span>
+          <span class="mesh-gradient__blob mesh-gradient__blob--5"></span>
+        </div>
+        <section class="slide slide--title" data-slide="0" aria-label="Title">
+          <div class="slide-body slide-body--split slide-body--title">
+            <div class="slide-copy">
+              <h1 class="animate-in">Paddlesport &amp; raft building permits</h1>
+              <p class="subtitle animate-in">How leaders gain and use them in Scouts</p>
+            </div>
+            <figure class="slide-figure slide-figure--hero animate-in">
+              <video
+                src="assets/videos/paddle-hero.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                disablepictureinpicture
+                aria-label="Aerial view of a river with a boat"
+              ></video>
+            </figure>
+          </div>
+        </section>
+
+        <section class="slide" data-slide="1" aria-label="Why permits matter">
+          <div class="slide-body">
+            <h2 class="animate-in">Why permits matter</h2>
+            <ul class="bullet-list">
+              <li class="animate-in">
+                Kayaking, canoeing, SUP and traditional raft building on the water are adventurous activities for young people.
+              </li>
+              <li class="animate-in">
+                You need the <strong>appropriate permit</strong> to lead or supervise on the water.
+              </li>
+              <li class="animate-in">
+                Permits keep young people safe and activities within POR and activity guidance.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="slide" data-slide="2" aria-label="Paddlesport permit types">
+          <div class="slide-body">
+            <h2 class="animate-in">Paddlesport permits</h2>
+            <ul class="bullet-list">
+              <li class="animate-in">
+                <strong>Personal</strong> — for under-18s to take part for themselves.
+              </li>
+              <li class="animate-in">
+                <strong>Leadership</strong> — lead one group (e.g. up to 8 craft or 12 people); stay on the water with them.
+              </li>
+              <li class="animate-in">
+                <strong>Supervisory</strong> — oversee more than one group with clear communication and rescue cover.
+              </li>
+              <li class="animate-in">
+                Kayak, canoe and stand-up paddleboard permits are separate where required.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="slide" data-slide="3" aria-label="Raft building permits">
+          <div class="slide-body">
+            <h2 class="animate-in">Raft building (traditional)</h2>
+            <ul class="bullet-list">
+              <li class="animate-in">
+                Pioneering rafts from poles, barrels and rope — then paddling on the water.
+              </li>
+              <li class="animate-in">
+                A <strong>traditional rafting permit</strong> is required except on Class C water (safe inland water under 100&nbsp;m wide).
+              </li>
+              <li class="animate-in">
+                Same permit types: personal, leadership and supervisory — matched to water class (B1, B2, B3, A).
+              </li>
+              <li class="animate-in">
+                Assessment covers raft construction, loading, launching, paddling, safety and rescue.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="slide" data-slide="4" aria-label="Before you apply">
+          <div class="slide-body">
+            <h2 class="animate-in">Before you apply</h2>
+            <ul class="bullet-list">
+              <li class="animate-in">
+                Adults need a suitable role, safeguarding checks and (18+) a DBS where required.
+              </li>
+              <li class="animate-in">
+                Speak to your <strong>Commissioner or Lead Volunteer</strong> about your plans.
+              </li>
+              <li class="animate-in">
+                Build and log experience on the craft and water you want to lead.
+              </li>
+              <li class="animate-in">
+                NGB qualifications may reduce practical assessment — you still need an assessor recommendation.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="slide" data-slide="5" aria-label="Path to a permit">
+          <div class="slide-body">
+            <h2 class="animate-in">Path to a permit</h2>
+            <ul class="bullet-list">
+              <li class="animate-in">
+                Find an <strong>Activity Assessor</strong> for your activity and environment.
+              </li>
+              <li class="animate-in">
+                Complete assessment against the official checklist — skills, safety and Scout rules.
+              </li>
+              <li class="animate-in">
+                Assessor recommends a level in <strong>My Membership</strong>.
+              </li>
+              <li class="animate-in">
+                Your <strong>Lead Volunteer</strong> checks and grants the permit; renew about every five years.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="slide slide--qr" data-slide="6" aria-label="Find out more">
+          <div class="slide-body slide-body--qr">
+            <h2 class="animate-in">Find out more</h2>
+            <p class="recap animate-in" id="qr-slide-caption">
+              Scan for Scouts paddlesport and traditional rafting guidance.
+            </p>
+            <div class="qr-wrap animate-in">
+              <div id="qr-slide" class="qr-box" aria-hidden="true"></div>
+            </div>
+            <p class="qr-url animate-in" id="qr-url-display"></p>
+          </div>
+        </section>
+      </div>
+
+      <footer class="presentation-footer">
+        <div class="slide-nav">
+          <button type="button" class="slide-nav__btn" id="btn-prev" aria-label="Previous slide">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="slide-nav__btn" id="btn-next" aria-label="Next slide">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="progress-dots" id="progress-dots" aria-hidden="true"></div>
+        <p class="hint"><kbd>Space</kbd> QR code</p>
+      </footer>
+    </div>
+
+    <div
+      class="modal-backdrop"
+      id="qr-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="qr-modal-title"
+      hidden
+    >
+      <div class="modal">
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close">
+          &times;
+        </button>
+        <h2 id="qr-modal-title">Scan for more information</h2>
+        <div id="qr-modal-code" class="qr-box qr-box--large"></div>
+        <p class="qr-url" id="qr-modal-url"></p>
+      </div>
+    </div>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/qrcode.min.js"></script>
+    <script src="assets/js/presentation.js"></script>
+  </body>
+</html>
