@@ -112,6 +112,33 @@ body.presentation-fullscreen-active {
   outline-offset: 2px;
 }
 
+.slide-deck-title {
+  flex-shrink: 0;
+  z-index: 15;
+  margin: 0;
+  padding: clamp(0.35rem, 1.2vh, 0.65rem) clamp(1rem, 4vw, 2rem) 0;
+  text-align: center;
+  font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--scouts-purple);
+  letter-spacing: 0.01em;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease;
+}
+
+.slide-deck-title.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide-deck-title[hidden] {
+  display: none;
+}
+
 .slide-timer {
   --timer-duration: 10s;
   flex-shrink: 0;

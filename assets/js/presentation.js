@@ -53,6 +53,7 @@
   const slideTimerEl = document.getElementById("slide-timer");
   const qrModalTitle = document.getElementById("qr-modal-title");
   const qrSlideCaption = document.getElementById("qr-slide-caption");
+  const slideDeckTitle = document.getElementById("slide-deck-title");
 
   let currentIndex = 0;
   let timerId = null;
@@ -79,6 +80,13 @@
     dots.forEach(function (dot, i) {
       dot.classList.toggle("active", i === index);
     });
+  }
+
+  function updateSlideDeckTitle(index) {
+    if (!slideDeckTitle) return;
+    const onContentSlide = index > 0;
+    slideDeckTitle.hidden = !onContentSlide;
+    slideDeckTitle.classList.toggle("is-visible", onContentSlide);
   }
 
   function resetAnimations(slide) {
@@ -112,6 +120,7 @@
 
     currentIndex = nextIndex;
     updateDots(currentIndex);
+    updateSlideDeckTitle(currentIndex);
   }
 
   function advanceSlide() {
@@ -345,6 +354,7 @@
     renderQrCode(document.getElementById("qr-modal-code"), 280);
 
     slides[0].classList.add("active");
+    updateSlideDeckTitle(0);
     startTimer();
 
     document.addEventListener("keydown", function (e) {
